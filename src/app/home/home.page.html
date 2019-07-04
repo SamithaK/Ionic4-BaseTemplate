@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="logout()" class="signout" slot="end">
+      <span>Logout</span>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<div class="top-container">
+  <ion-searchbar debounce="500" placeholder="Search by first name" [(ngModel)]="searchTerm" (ionChange)="triggerSearch(searchTerm)"
+    (ionClear)="cancelSearch()" (ionCancel)="emptySearch()"></ion-searchbar>
+  <ion-icon (click)="addNew()" name="add-circle"></ion-icon>
+</div>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of result" (click)="itemSelected(item)" class="detail-item">
+      <span class="name-span">{{item.first_name}}</span>
+      <span class="gender-span">{{item.gender}}</span>
+      <span class="nic-span">{{item.phone}}</span>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

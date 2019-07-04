@@ -1,0 +1,46 @@
+
+.top-container {
+  display: flex;
+
+  ion-icon {
+    margin-top: 3%;
+    font-size: 2.3em;
+    margin-right: 4px;
+  }
+}
+
+.signout {
+
+  margin-right: 5px;
+
+  span {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+}
+
+ion-list {
+  padding-top: 2%;
+}
+.detail-item {
+  display: flex;
+  margin: 1em;
+  font-size: 0.8em;
+  padding-top: 1em;
+}
+
+.name-span {
+  flex: 1;
+  padding: 2px;
+}
+.gender-span {
+flex: 1;
+padding: 2px;
+text-transform: capitalize;
+text-align: left;
+}
+.nic-span {
+  width: 140px;
+  padding: 2px;
+  text-align: right;
+}

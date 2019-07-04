@@ -1,0 +1,7 @@
+{
+  "name": "avalone-hr-system",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,35 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="logo-content">
+    <img src="assets/logo/logo.png" />
+    <h2>HR MANAGMENT</h2>
+  </div>
+
+
+  <ion-list class="side_paddings">
+    <form [formGroup]="loginForm" (submit)="saveUser()">
+
+      <ion-item class="margin-top-item-spacing">
+        <ion-label color="secondary" position="floating">Username</ion-label>
+        <ion-input color="secondary" formControlName="userName" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="margin-top-item-spacing">
+        <ion-label color="secondary" position="floating">Password</ion-label>
+        <ion-input color="secondary" class="label-text-color" formControlName="password" type="password"></ion-input>
+      </ion-item>
+
+    </form>
+    <div class="margin-top-spacing">
+      <ion-button (click)="loginBtn()" color="primary" [disabled]="!loginForm.valid" expand="block">Sign In</ion-button>
+    </div>
+
+  </ion-list>
+
+
+</ion-content>
